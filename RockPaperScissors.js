@@ -14,7 +14,7 @@ for (var turn = 0; turn < 10; turn++) {
   var computerGuess = RPS[randomNumber];
 
   // use a prompt to get one of three values form the user
-  var userChoice = prompt("Rock, Paper, or scissors?");
+  var userChoice = prompt("Rock, Paper, or Scissors?");
 
   // if the user's answer is one of three allowed then
   if (
@@ -28,7 +28,7 @@ for (var turn = 0; turn < 10; turn++) {
       (userChoice === "Paper" && computerGuess === "Rock") ||
       (userChoice === "Scissors" && computerGuess === "Paper")
     ) {
-      // add 1 to wins and alert the player they won, and display number of wins
+      // add 1 to wins, alert the player they won, and display number of wins
       wins++;
       alert("You win! You've won: " + wins + " times!");
 
@@ -48,7 +48,13 @@ for (var turn = 0; turn < 10; turn++) {
 }
 // Outside of for loop, after it has finished running, alert the player with total wins/losses/ties
 alert(
-  "Times won: " + wins + "\nTimes lost: " + losses + "\nTimes tied :" + ties
+  "Times won: " +
+    wins +
+    "\nTimes lost: " +
+    losses +
+    "\nTimes tied: " +
+    ties +
+    "\n\nRefresh the page to play again!"
 );
 
 //First solution - takes longer and doesn't scale
