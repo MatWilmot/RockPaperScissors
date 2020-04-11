@@ -1,5 +1,7 @@
 # Rock, Paper, Scissors
 
+Play a game against the computer!
+
 ## Instructions
 
 1. Type either Rock, Paper, or Scissors as your answer in the prompt window. It's case sensitive!
